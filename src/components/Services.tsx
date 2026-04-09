@@ -89,7 +89,12 @@ const Services = () => {
           </p>
         </motion.div>
 
-        <div className={styles.grid}>
+        <div className="mobile-swipe-indicator" style={{ justifyContent: 'center' }}>
+          <span>Swipe to explore</span>
+          <ArrowRight size={14} className="mobile-swipe-icon" />
+        </div>
+
+        <div className={`${styles.grid} horizontal-scroll`}>
           {services.map((service, index) => (
             <motion.div 
               key={index}

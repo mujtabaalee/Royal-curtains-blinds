@@ -177,9 +177,11 @@
 
 @media (max-width: 640px) {
   .socialProof {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-start;
     gap: 1.5rem;
+    column-gap: 2.5rem;
   }
   .divider {
     display: none;

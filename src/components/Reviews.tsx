@@ -83,7 +83,12 @@ const Reviews = () => {
           </p>
         </motion.div>
 
-        <div className={styles.grid}>
+        <div className="mobile-swipe-indicator" style={{ justifyContent: 'center' }}>
+          <span>Swipe to explore</span>
+          <ArrowRight size={14} className="mobile-swipe-icon" />
+        </div>
+
+        <div className={`${styles.grid} horizontal-scroll`}>
           {staticReviews.map((review, i) => (
             <motion.div 
               key={review.id}

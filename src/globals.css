@@ -167,3 +167,36 @@ img {
   h2 { font-size: 2rem; }
   .btn { width: 100%; }
 }
+
+/* Horizontal Scroll UX Fixes */
+.horizontal-scroll {
+  touch-action: pan-x;
+}
+
+.mobile-swipe-indicator {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-gold);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .mobile-swipe-indicator {
+    display: flex;
+  }
+}
+
+.mobile-swipe-icon {
+  animation: swipeAnim 1.5s infinite ease-in-out;
+}
+
+@keyframes swipeAnim {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(8px); }
+}

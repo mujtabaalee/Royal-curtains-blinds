@@ -94,7 +94,12 @@ const ProductsPage = () => {
                 </p>
               </motion.div>
 
-              <div className={styles.scrollContainer}>
+              <div className="mobile-swipe-indicator" style={{ justifyContent: 'flex-start', paddingLeft: '1rem' }}>
+                <span>Swipe to explore</span>
+                <ArrowRight size={14} className="mobile-swipe-icon" />
+              </div>
+
+              <div className={`${styles.scrollContainer} horizontal-scroll`}>
                 {categoryProducts.map((product, index) => (
                   <motion.div 
                     key={product.id}
