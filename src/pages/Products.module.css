@@ -39,8 +39,11 @@
 .scrollContainer {
   display: flex;
   overflow-x: auto;
+  overflow-y: hidden;
   gap: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
+  padding-top: 1.5rem;
+  margin-top: -1.5rem;
   scrollbar-width: thin;
   scrollbar-color: var(--accent-gold) rgba(255, 255, 255, 0.1);
   -webkit-overflow-scrolling: touch;

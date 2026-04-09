@@ -40,8 +40,11 @@
 .grid {
   display: flex;
   overflow-x: auto;
+  overflow-y: hidden;
   gap: 1.5rem;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
+  padding-top: 1.5rem;
+  margin-top: -1.5rem;
   scrollbar-width: thin;
   scrollbar-color: var(--accent-gold) rgba(0, 0, 0, 0.05);
   scroll-snap-type: x mandatory;
