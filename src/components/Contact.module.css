@@ -1,0 +1,195 @@
+.contact {
+  padding: 100px 0;
+  background: var(--white);
+  color: var(--navy);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1.2fr;
+    align-items: flex-start;
+  }
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 1.5rem;
+  font-family: var(--font-serif);
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  max-width: 500px;
+}
+
+.contactItems {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.iconBox {
+  width: 50px;
+  height: 50px;
+  background: var(--linen);
+  color: var(--accent);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.item h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+
+.item a, .item p {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.item a:hover {
+  color: var(--accent);
+}
+
+.whatsappBox {
+  padding: 2rem;
+  background: rgba(37, 211, 102, 0.05); /* WhatsApp Green */
+  border: 1px solid rgba(37, 211, 102, 0.2);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.whatsappBox p {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.whatsappBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: #25D366;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: var(--transition-smooth);
+}
+
+.whatsappBtn:hover {
+  background: #128C7E;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2);
+}
+
+.formSide {
+  background: var(--navy);
+  padding: 3rem;
+  border-radius: 20px;
+  color: var(--linen);
+  box-shadow: 0 30px 60px rgba(10, 17, 40, 0.15);
+}
+
+@media (max-width: 640px) {
+  .formSide {
+    padding: 2rem 1.5rem;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .formRow {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent);
+}
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: var(--linen);
+  font-family: var(--font-sans);
+  transition: var(--transition-smooth);
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus,
+.formGroup select:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.formGroup select option {
+  background: var(--navy);
+}
+
+.w-full {
+  width: 100%;
+}

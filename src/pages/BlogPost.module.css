@@ -1,0 +1,96 @@
+.page {
+  padding-top: 100px;
+  min-height: 100vh;
+  background-color: var(--primary-navy);
+}
+
+.article {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.meta {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.heroImageWrapper {
+  width: 100%;
+  aspect-ratio: 2/1;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Base rich text styles */
+.content h2, .content h3, .content h4 {
+  font-family: var(--font-heading);
+  color: #fff;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  margin-bottom: 1.5rem;
+}
+
+.content a {
+  color: var(--accent-gold);
+  text-decoration: underline;
+}
+
+.content img {
+  max-width: 100%;
+  border-radius: 1rem;
+  margin: 2rem 0;
+}
+
+.content ul, .content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.content blockquote {
+  border-left: 4px solid var(--accent-gold);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  font-style: italic;
+  color: #ccc;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  color: var(--accent-gold);
+}

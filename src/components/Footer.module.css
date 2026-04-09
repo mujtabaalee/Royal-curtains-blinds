@@ -1,0 +1,157 @@
+.footer {
+  background: var(--navy);
+  color: var(--linen);
+  padding: 80px 0 40px;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 2fr 1fr 1.5fr 2fr;
+  }
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logoText {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.logoSubtext {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--linen);
+  letter-spacing: 2px;
+  margin-top: 4px;
+}
+
+.description {
+  color: var(--text-muted);
+  max-width: 300px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-smooth);
+}
+
+.socialIcon:hover {
+  background: var(--accent);
+  color: var(--black);
+  transform: translateY(-3px);
+}
+
+.heading {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.links li {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.links a:hover {
+  color: var(--accent);
+  padding-left: 5px;
+}
+
+.contactColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.contactItem a:hover {
+  color: var(--accent);
+}
+
+.icon {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.bottom {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+@media (min-width: 768px) {
+  .bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+.legal {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.legal a:hover {
+  color: var(--accent);
+}
